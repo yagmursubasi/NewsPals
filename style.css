@@ -1,0 +1,166 @@
+/* General Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f4;
+}
+
+/* Navbar */
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
+}
+.navbar {
+  background: linear-gradient(135deg, #00796b, #004d99);
+}
+
+.navbar .navbar-brand {
+  color: white;
+  font-size: 28px;
+}
+
+.navbar .navbar-brand span {
+  color: #ff6600;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 16px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff6600;
+}
+.bi-list {
+  color: #f4f4f4;
+}
+
+/* Search */
+.search-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#search-input {
+  width: 200px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#search-btn {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+  background-color: #00796b;
+}
+
+/* Blog Container */
+#blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.blog-card {
+  border: 2px solid #f4f4f4; /* Kenarlık için rengin biraz daha açık olmasını sağladım */
+  padding: 15px; /* Kartın iç kısmına padding ekliyoruz */
+  margin-bottom: 30px; /* Kartlar arasındaki dikey boşluk */
+  background-color: #fff;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-card h2 {
+  margin: 5px;
+  font-size: 18px;
+  flex: 1;
+}
+
+.blog-card p {
+  margin: 5px;
+  color: #666;
+}
+
+.blog-card a {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  background: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.blog-card a:hover {
+  background: #00796b;
+}
+/* Footer section */
+.footer {
+  background: linear-gradient(135deg, #004d99, #00796b);
+  color: white;
+}
+
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a:hover {
+  color: #ff6600;
+  transition: color 0.3s ease;
+}
+
+.footer .bi {
+  transition: color 0.3s ease;
+}
+
+.footer .bi:hover {
+  color: #ff6600;
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+  #blog-container {
+    gap: 20px; /* Küçük ekranlarda daha az boşluk */
+  }
+  .blog-card {
+    margin-bottom: 20px; /* Kartlar arasında daha küçük bir boşluk */
+  }
+}

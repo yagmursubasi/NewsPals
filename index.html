@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Search</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid obj-width">
+        <a class="navbar-brand" href="index.html">News<span>Pulse</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link category-link" href="#" data-category="general"
+                >General</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link category-link"
+                href="#"
+                data-category="business"
+                >Business</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link category-link" href="#" data-category="sports"
+                >Sports</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link category-link"
+                href="#"
+                data-category="technology"
+                >Technology</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link category-link"
+                href="#"
+                data-category="entertainment"
+                >Entertainment</a
+              >
+            </li>
+            <li class="nav-item">
+              <div class="search-container">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search news..."
+                  class="form-control"
+                />
+                <button id="search-btn" class="btn btn-orange">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <main id="blog-container" class="container mt-5 obj-width">
+      <div
+        class="row row-cols-1 row-cols-md-3 g-2 mb-3"
+        id="news-cards-container"
+      ></div>
+    </main>
+    <footer class="footer bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5>About Us</h5>
+            <p>
+              NewsPulse is your go-to source for the latest news updates. Stay
+              informed with our top-quality content and accurate reporting.
+            </p>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  data-category="general"
+                  class="text-white text-decoration-none"
+                  >General</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-category="bussines"
+                  class="text-white text-decoration-none"
+                  >Bussines</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-category="technology"
+                  class="text-white text-decoration-none"
+                  >Technology</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-category="entertainment"
+                  class="text-white text-decoration-none"
+                  >Entertainment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-category="sports"
+                  class="text-white text-decoration-none"
+                  >Sports</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media Section -->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <h5>Follow Us</h5>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-white"
+                ><i class="bi bi-facebook fs-4"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="bi bi-twitter fs-4"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="bi bi-instagram fs-4"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="bi bi-linkedin fs-4"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <p class="mb-0">&copy; 2025 NewsPulse. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
